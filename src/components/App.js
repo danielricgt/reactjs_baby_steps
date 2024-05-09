@@ -1,7 +1,10 @@
 import logo from "../assets/images/logo.svg";
 import "../assets/css/App.css";
+
 // importar componentes
 import MiComponente from "./MiComponente";
+import Peliculas from "./Peliculas";
+import Header from "./Header";
 
 const holaMundo = (nombre, edad) => {
   const presentacion = (
@@ -27,6 +30,8 @@ function App() {
 
         <section className="componentes">
           <MiComponente></MiComponente>
+          <Peliculas></Peliculas>
+          <Header></Header>
         </section>
       </header>
     </div>
