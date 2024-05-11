@@ -4,10 +4,47 @@ import React, { Component } from "react";
 class Header extends Component {
     render() {
       return (
-        <div id="peliculas">
-          <h4>Header</h4>
-    
-        </div>
+        <header id="animalHeader">
+        <div className="center">
+        
+            <div id="Logo">
+
+              
+
+
+                <img src="../assets/images/giphy.gif" className="appp logo" alt="Logotipo"/>
+
+
+                <span id="Brand">
+                    <strong>Master </strong> en framework
+                </span>
+            </div>
+            
+            <nav id="Menu">
+                <ul>
+                    <li>
+                        <a href="index.html" target="_blank">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" target="_blank">Blog</a>
+                    </li>
+                    <li>
+                        <a href="formulario.html" target="_blank">Formulario</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Pagina 1</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Pagina 2</a>
+                    </li>
+                </ul>
+                </nav> </div>
+        
+      
+        <div className="clearfix"></div>
+
+    </header>
+
       );
     }
   }
