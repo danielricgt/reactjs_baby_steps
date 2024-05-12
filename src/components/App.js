@@ -1,41 +1,39 @@
-import logo from "../assets/images/logo.svg";
+
 import "../assets/css/App.css";
 
 // importar componentes
-import MiComponente from "./MiComponente";
-import Peliculas from "./Peliculas";
-import Header from "./Header";
 
-const holaMundo = (nombre, edad) => {
-  const presentacion = (
-    <div>
-      <h2>Hola soy {nombre}</h2>
-      <h1>Tengo {edad}</h1>
-    </div>
-  );
-  return presentacion;
-};
+import Header from "./Header";
+import Slider from "./Slider";
+import Sidebar from "./Sidebar";
+import Footer from "./Footer";
+import SeccionPruebas from "./SeccionPruebas";
+
+
 function App() {
-  const nombre = "Daniel Galvan";
-  const edad = 32;
+
 
   return (
     <div className="App">
        <Header></Header>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        {holaMundo(nombre, edad)}
+       <Slider></Slider>
 
-        <section className="componentes">
-          <MiComponente></MiComponente>
-          <Peliculas></Peliculas>
-         
-        </section>
-      </header>
+
+
+   <div className="center">
+
+   <SeccionPruebas>
+      
+      </SeccionPruebas>
+     
+        <Sidebar></Sidebar>
     </div>
+    <div className="clearfix">
+
+    </div>
+    <Footer></Footer>
+    </div> 
+    
   );
 }
 
