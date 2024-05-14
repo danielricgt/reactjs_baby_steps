@@ -7,24 +7,26 @@ import Header from "./Header";
 import Slider from "./Slider";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
-import SeccionPruebas from "./SeccionPruebas";
-
+import Peliculas from "./Peliculas";
 
 function App() {
 
-
+const buttonString = "Ir al Blog";
   return (
     <div className="App">
        <Header></Header>
-       <Slider></Slider>
+       <Slider 
+       title="Bienvenido a Animalitos Web"
+       btn = {buttonString}
+       ></Slider>
 
 
 
    <div className="center">
 
-   <SeccionPruebas>
+<Peliculas></Peliculas>
       
-      </SeccionPruebas>
+   
      
         <Sidebar></Sidebar>
     </div>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import MiComponente from "./MiComponente";
-import Peliculas from "./Peliculas";
+
 
 class SeccionPruebas extends Component {
 //   contador = 0;
@@ -16,13 +16,13 @@ class SeccionPruebas extends Component {
     contador : 0
 
   }
-  sumar = () => {
+  sumar = () =>  {
     this.setState({
       contador: this.state.contador + 1,
     });
   };
 
-  restar() {
+  restar = () => {
     this.setState({
       contador: this.state.contador - 1,
     });
@@ -51,19 +51,19 @@ class SeccionPruebas extends Component {
         <h2 className="sub-header">Funciones y JSX basicos</h2>
         <section className="componentes">
           <MiComponente></MiComponente>
-          <Peliculas></Peliculas>
+         
           <h2 className="sub-header"> Estados </h2>
           <p> Contador: {this.state.contador} </p>
           <p>
             <input
               type="button"
               value="Sumar"
-              onClick={this.sumar.bind(this)}
+              onClick={this.sumar}
             ></input>
             <input
               type="button"
               value="Restar"
-              onClick={this.restar.bind(this)}
+              onClick={this.restar}
             ></input>
           </p>
         </section>
